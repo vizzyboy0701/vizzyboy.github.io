@@ -15,11 +15,11 @@ body{
     animation: mymove 5s infinite;
     text-shadow:2px 2px 3px #ff0404;
     text-align: center;
-   position: absolute;
-   top: 75%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   font-size:4rem;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:4rem;
 }
 
 h3{
@@ -65,14 +65,15 @@ div{
   border-radius:22px;
   background-size: cover !important;
   background-position: center !important;
-  box-shadow: 9px 8px 10px #e84e4e;
+  box-shadow: 9px 8px 10px ;
   margin-bottom:2%;
   margin-top: 2%;
+  transition: box-shadow 500ms;
 }
 a:link{
   text-decoration-line: none;
+  color:#ed6963;
 }
-
 a:visited{
   color:#ed6963;
 }
@@ -90,7 +91,76 @@ a:active{
 
 
  hr.line{
-   border-top: 2px wavy #fff;
+   border-top: 2px solid #fff;
    width: 15%;
    margin-bottom: 6%;
  }
+.article-image:hover{
+  box-shadow: 9px 5px 10px #e84e4e;
+  transform: scale(1.1,1.1);
+}
+
+.article-image::after {
+  opacity: 0;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  box-shadow: 2px 3px 5px white;
+  color:white;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color:  #fff;
+  margin: 0px 50px 0px 50px;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color:#fff;
+  margin: 0px 50px 0px 50px;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: #fff;
+  margin: 0px 50px 0px 50px;
+}
+footer{
+  padding: 2% 0 5% 0;
+  color: #fff;
+  text-align: center;
+}
+
+footer > p{
+  margin: 40px 0px 20px 0px;
+  color: #7c6c6b;
+  font-size: .8rem;
+}
+
+
+.fa-twitter:active {
+  background-color:#55ACEE;
+  box-shadow: 0 5px white;
+  transform: translateY(4px);
+}
+  .fa-google:active {
+  background-color: #dd4b39;
+  box-shadow: 0 5px white;
+  transform: translateY(4px);
+}
+  .fa-instagram:active {
+  background-color: #125688;
+  box-shadow: 0 5px white;
+  transform: translateY(4px);
+}
